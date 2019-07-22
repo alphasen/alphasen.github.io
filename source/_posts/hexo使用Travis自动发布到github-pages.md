@@ -1,7 +1,12 @@
 ---
 title: hexo使用Travis自动发布到github-pages
 date: 2019-7-22 15:6:18
-tags:效率
+tags:
+- 效率
+- hexo
+- github
+categories:
+- 经验
 ---
 
 # [hexo](https://hexo.io/zh-cn/)
