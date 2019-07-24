@@ -1,4 +1,13 @@
-## react-router/react-router-dom（v4.x/v5.x）指北
+---
+title: react-router/react-router-dom（v4.x/v5.x）指北
+date: 2019年07月24日11:25:15
+tags:
+- 效率
+- react
+- react-router-dom
+categories:
+- 经验
+---
 
 > https://juejin.im/post/5995a2506fb9a0249975a1a4
 
@@ -122,7 +131,7 @@
 
 10. 授权路由
 
-    <iframe src="https://codesandbox.io/embed/shouquanluyou-811w6?fontsize=14" title="授权路由" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+    <iframe src="https://codesandbox.io/embed/shouquanluyou-811w6?autoresize=1&fontsize=14" title="授权路由" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
 
 11. Link 和 NavLink
 
