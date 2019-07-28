@@ -359,25 +359,26 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/25/react-router-dom（v4.x-v5.x）指北/" >
+        <a class="abstract-title" href = "/2019/07/28/react-router-dom（v4.x-v5.x）指北/" >
             
                 <span>react-router/react-router-dom（v4.x/v5.x）指北</span>
         </a>
         <div class="abstract-content">
             
-https://juejin.im/post/5995a2506fb9a0249975a1a4
+关于 React Router 4 的一切
+聊一聊我对 React Context 的理解以及应用
 
 
 yarn add react-router-dom @types/react-router-dom
 
 包容性路由（小心引起路由重复渲染问题）
 在之前（v3.x）版本，路由是排他性的，也就是说只有一条路由会最终渲染，但是现在路由是包容性的，只要路由符合匹配规则，就会将路由声明的位置（多个Route，声明的位置决定其出现顺序）替换为props中指定的组件
-12345678910111213// 这样子声明两个路由// href=&quot;http://xxx.xx/user&quot; 匹...
+12345678910111213// 这样子声明两个路由// href=&quot;http://xxx.xx/user&quot;...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/25</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
             </div>
             <!-- tags  -->
             
@@ -679,13 +680,22 @@ cd blog
     
     
     
-    <div class="archive-year"> 2019 </div>
+    <div class="archive-year"> Invalid date </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">07/25</span><a class="archive-post-title" href= "/2019/07/25/react-router-dom（v4.x-v5.x）指北/" >react-router/react-router-dom（v4.x/v5.x）指北</a>
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/07/28/react-router-dom（v4.x-v5.x）指北/" >react-router/react-router-dom（v4.x/v5.x）指北</a>
         </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
     
     
         <li class="archive-post-item">
@@ -775,7 +785,5 @@ jsonContent:
     </div>
     <!-- async load share.js -->
      
-    </body>
-</html>
-
-
+    <script>'use strict';'serviceWorker'in navigator&&navigator.serviceWorker.register('service-worker.js').then(function(a){a.onupdatefound=function(){var b=a.installing;b.onstatechange=function(){switch(b.state){case'installed':navigator.serviceWorker.controller?console.log('New or updated content is available.'):console.log('Content is now available offline!');break;case'redundant':console.error('The installing service worker became redundant.');}}}}).catch(function(a){console.error('Error during service worker registration:',a)});
+</script></body></html>
