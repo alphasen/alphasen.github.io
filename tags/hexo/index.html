@@ -17,7 +17,7 @@
     <meta name="renderer" content="webkit">
     <meta name="copyright" content="John Doe">
     
-    <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    <meta name="keywords" content="AlphaSen,AlphaSen blog,AlphaSen blog,AlphaSen Studio">
     
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
@@ -192,8 +192,8 @@
     <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script">
     <link rel="preload" href="/scripts/main.js" as="script">
     <link rel="preload" as="font" href="/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="prefetch" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
     <link rel="manifest" href="/manifest.json">
-    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
     
     <!-- fancybox -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" defer></script>
@@ -243,7 +243,7 @@
     </div>
 </div>
         <script>
- 
+
   // get user agent
   var browser = {
     versions: function () {
@@ -265,11 +265,11 @@
       };
     }()
   }
-  console.log("userAgent:" + browser.versions.userAgent);
+//   console.log("userAgent:" + browser.versions.userAgent);
 
   // callback
   function fontLoaded() {
-    console.log('font loaded');
+    // console.log('font loaded');
     if (document.getElementsByClassName('site-intro-meta')) {
       document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
       document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
@@ -283,7 +283,7 @@
   // UC不支持跨域，所以直接显示
   function asyncCb(){
     if (browser.versions.uc) {
-      console.log("UCBrowser");
+    //   console.log("UCBrowser");
       fontLoaded();
     } else {
       WebFont.load({
@@ -332,11 +332,12 @@
   }
 
   asyncLoadWithFallBack([
-    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js",
     "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
     "/lib/webfontloader.min.js"
   ], asyncCb, asyncErr)
-</script>        
+</script>
+        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
             <main class="main index-page">
@@ -415,22 +416,13 @@ cd blog
     
         
             
-                <a href="mailto:12345@qq.com" class="iconfont-archer email" title=email ></a>
+                <a href="mailto:alpha.sen@outlook.com" class="iconfont-archer email" title=email ></a>
             
         
     
         
             
                 <a href="//github.com/alphasen" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/example_qr.png" />
-                </span>
             
         
     
@@ -529,13 +521,22 @@ cd blog
     
     
     
-    <div class="archive-year"> 2019 </div>
+    <div class="archive-year"> Invalid date </div>
     <ul class="year-list">
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">07/28</span><a class="archive-post-title" href= "/2019/07/28/react-router-dom（v4.x-v5.x）指北/" >react-router/react-router-dom（v4.x/v5.x）指北</a>
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/2019/07/28/react-router-dom（v4.x-v5.x）指北/" >react-router/react-router-dom（v4.x/v5.x）指北</a>
         </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> 2019 </div>
+    <ul class="year-list">
     
     
         <li class="archive-post-item">
