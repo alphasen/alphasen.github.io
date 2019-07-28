@@ -1,16 +1,16 @@
 # ========== Profile ========== #
 # avatar
-avatar: /avatar/Misaka.jpg
+avatar: /avatar/blog.png
 # author name
 author: AlphaSen
 # signature
 signature: witness me
 # SNS (you can custom the order)
 social:
-  email: 12345@qq.com
+  email: alpha.sen@outlook.com
   github: //github.com/alphasen
   # wechat and qq should be a path of qr-code image
-  wechat: /assets/example_qr.png
+  # wechat: /assets/example_qr.png
   qq:
   telegram:
   weibo:
@@ -30,11 +30,11 @@ social:
   rss:
 # friends
 friends:
-  friendA: //www.baidu.com
-  friendB: //www.google.com
+  # friendA: //www.baidu.com
+  # friendB: //www.google.com
   friendC:
 about:
-  enable: true
+  enable: false
   image: '/intro/about-bg.jpg'
 
 # ========== Site ========== #
@@ -42,9 +42,10 @@ about:
 SEO_title: AlphaSen's Studio
 # keywords for site (good for SEO)
 SEO_keywords:
-  - hexo
-  - 'hexo-theme'
-  - 'hexo-blog'
+  - AlphaSen
+  - 'AlphaSen blog'
+  - 'AlphaSen blog'
+  - 'AlphaSen Studio'
 # main title shown in header image
 main_title: AlphaSen's Studio.
 # subtitle

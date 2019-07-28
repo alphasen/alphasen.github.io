@@ -1,5 +1,5 @@
 <script>
- 
+
   // get user agent
   var browser = {
     versions: function () {
@@ -21,11 +21,11 @@
       };
     }()
   }
-  console.log("userAgent:" + browser.versions.userAgent);
+//   console.log("userAgent:" + browser.versions.userAgent);
 
   // callback
   function fontLoaded() {
-    console.log('font loaded');
+    // console.log('font loaded');
     if (document.getElementsByClassName('site-intro-meta')) {
       document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
       document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
@@ -39,7 +39,7 @@
   // UC不支持跨域，所以直接显示
   function asyncCb(){
     if (browser.versions.uc) {
-      console.log("UCBrowser");
+    //   console.log("UCBrowser");
       fontLoaded();
     } else {
       WebFont.load({
@@ -88,7 +88,7 @@
   }
 
   asyncLoadWithFallBack([
-    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js",
     "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
     "<%- url_for('lib/webfontloader.min.js') %>"
   ], asyncCb, asyncErr)
