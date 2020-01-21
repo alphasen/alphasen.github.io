@@ -2,13 +2,13 @@
 # avatar
 avatar: /avatar/blog.png
 # author name
-author: AlphaSen
+author: 喵喵酱
 # signature
 signature: witness me
 # SNS (you can custom the order)
 social:
-  email: alpha.sen@outlook.com
-  github: //github.com/alphasen
+  email:
+  github:
   # wechat and qq should be a path of qr-code image
   # wechat: /assets/example_qr.png
   qq:
@@ -39,7 +39,7 @@ about:
 
 # ========== Site ========== #
 # title of the site (good for SEO)
-SEO_title: AlphaSen's Studio
+SEO_title: 千木的自留地
 # keywords for site (good for SEO)
 SEO_keywords:
   - AlphaSen
@@ -47,7 +47,7 @@ SEO_keywords:
   - 'AlphaSen blog'
   - 'AlphaSen Studio'
 # main title shown in header image
-main_title: AlphaSen's Studio.
+main_title: 千木的自留地
 # subtitle
 subtitle: it's better to burn out than to fade away
 # site haeder image
@@ -64,8 +64,8 @@ algolia_search:
     per_page: 10
   labels:
     input_placeholder: Search for Posts
-    hits_empty: "We did not find any results for the search: ${query}"
-    hits_stats: "${hits} results found in ${time} ms"
+    hits_empty: 'We did not find any results for the search: ${query}'
+    hits_stats: '${hits} results found in ${time} ms'
 
 # ========== Comment ========== #
 # Fill in the field to enable the corresponding comment plugin
