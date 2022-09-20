@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>hexo使用Travis自动发布到github-pages</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.7f06094c.css" as="style"><link rel="preload" href="/assets/js/app.87d94ce0.js" as="script"><link rel="preload" href="/assets/js/2.58eaf8be.js" as="script"><link rel="preload" href="/assets/js/26.61782855.js" as="script"><link rel="preload" href="/assets/js/3.f2a5cb00.js" as="script"><link rel="prefetch" href="/assets/js/10.7be5d1ae.js"><link rel="prefetch" href="/assets/js/11.2f28fa00.js"><link rel="prefetch" href="/assets/js/12.7222b1f1.js"><link rel="prefetch" href="/assets/js/13.e4a3df77.js"><link rel="prefetch" href="/assets/js/14.b056a73a.js"><link rel="prefetch" href="/assets/js/15.49856cb4.js"><link rel="prefetch" href="/assets/js/16.f4425947.js"><link rel="prefetch" href="/assets/js/17.33e280fa.js"><link rel="prefetch" href="/assets/js/18.3a61f332.js"><link rel="prefetch" href="/assets/js/19.00f8b91c.js"><link rel="prefetch" href="/assets/js/20.e8beb5b5.js"><link rel="prefetch" href="/assets/js/21.2166c3ea.js"><link rel="prefetch" href="/assets/js/22.0b419ae3.js"><link rel="prefetch" href="/assets/js/23.776cd046.js"><link rel="prefetch" href="/assets/js/24.4756b9c2.js"><link rel="prefetch" href="/assets/js/25.5ea267cb.js"><link rel="prefetch" href="/assets/js/27.670be8ef.js"><link rel="prefetch" href="/assets/js/28.b506e69e.js"><link rel="prefetch" href="/assets/js/4.b408d12e.js"><link rel="prefetch" href="/assets/js/5.40b2e56c.js"><link rel="prefetch" href="/assets/js/6.ffab53b5.js"><link rel="prefetch" href="/assets/js/7.8f488cb5.js"><link rel="prefetch" href="/assets/js/8.dac88724.js"><link rel="prefetch" href="/assets/js/9.c72da658.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7f06094c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/nav.1.javascript/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><a href="/nav.2.algorithm/" class="nav-link">
+  Algorithm
+</a></div><div class="nav-item"><a href="/nav.3.react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/nav.4.vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/nav.5.typescript/" class="nav-link">
+  Typescript
+</a></div><div class="nav-item"><a href="/nav.6.webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/nav.7.other/" class="nav-link router-link-active">
+  Other
+</a></div><div class="nav-item"><a href="https://devdocs.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Devdocs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/nav.1.javascript/" class="nav-link">
+  Javascript
+</a></div><div class="nav-item"><a href="/nav.2.algorithm/" class="nav-link">
+  Algorithm
+</a></div><div class="nav-item"><a href="/nav.3.react/" class="nav-link">
+  React
+</a></div><div class="nav-item"><a href="/nav.4.vue/" class="nav-link">
+  Vue
+</a></div><div class="nav-item"><a href="/nav.5.typescript/" class="nav-link">
+  Typescript
+</a></div><div class="nav-item"><a href="/nav.6.webpack/" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><a href="/nav.7.other/" class="nav-link router-link-active">
+  Other
+</a></div><div class="nav-item"><a href="https://devdocs.io/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Devdocs
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/nav.7.other/" aria-current="page" class="sidebar-link">Other</a></li><li><a href="/nav.7.other/github-pages.html" aria-current="page" class="active sidebar-link">hexo使用Travis自动发布到github-pages</a></li><li><a href="/nav.7.other/深度好文.html" class="sidebar-link">深度好文</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="hexo"><a href="#hexo" class="header-anchor">#</a> <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">hexo<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h1> <ol><li><p>安装hexo</p> <ol><li><code>npm install hexo-cli -g</code></li> <li><code>hexo init blog</code></li> <li><code>cd blog</code></li></ol></li> <li><p>配置github</p> <ol><li><p>创建项目blog（必须为public）<code>blog.github.io</code></p></li> <li><p>创建token<a href="https://github.com/settings/tokens" target="_blank" rel="noopener noreferrer">Generate new token<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <blockquote><p>勾选 repo 及user下的user:email</p></blockquote></li> <li><p>复制生成的token，并将其保存</p></li></ol></li> <li><p>配置Travis</p> <ol><li>使用github账号登录Travis</li> <li>在<a href="https://travis-ci.org/account/repositories" target="_blank" rel="noopener noreferrer">settings<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>中找到blog,打开其右侧的小开关，然后点击最右侧的settings进入设置界面</li> <li>找到Environment Variables并创建环境变量 <code>DEPLOY_REPO</code> value为第二步中生成的token加上github中的git地址 像这样的形式<code>https://16b15f1ae07a172ffb50583de0c37e49ae729120@github.com/alphasen/blog.github.io.git</code></li></ol></li> <li><p>配置blog项目</p> <ol><li><p>在第一步中生成的blog文件夹中创建git项目</p></li> <li><p>保存当前内容到master分支(<code>git add .</code> <code>git commit -m 'init'</code>)</p></li> <li><p>创建新分支<code>git checkout -b hexo</code></p></li> <li><p>在根目录下新建<code>.travis.yml</code></p></li> <li><p>编辑travis配置文件</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token key atrule">language</span><span class="token punctuation">:</span> node_js
+<span class="token comment"># sudo: false</span>
+<span class="token key atrule">node_js</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> <span class="token string">'9'</span>
+<span class="token key atrule">branches</span><span class="token punctuation">:</span>
+  <span class="token key atrule">only</span><span class="token punctuation">:</span>
+  <span class="token punctuation">-</span> hexo
+
+<span class="token key atrule">install</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> npm install
+
+<span class="token key atrule">script</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> ./node_modules/.bin/hexo generate
+
+<span class="token key atrule">after_success</span><span class="token punctuation">:</span>
+<span class="token punctuation">-</span> mkdir .deploy
+<span class="token punctuation">-</span> cd .deploy
+<span class="token punctuation">-</span> git clone <span class="token punctuation">-</span><span class="token punctuation">-</span>depth 1 <span class="token punctuation">-</span><span class="token punctuation">-</span>branch master <span class="token punctuation">-</span><span class="token punctuation">-</span>single<span class="token punctuation">-</span>branch $DEPLOY_REPO . <span class="token punctuation">|</span><span class="token punctuation">|</span> (git init <span class="token important">&amp;&amp;</span> git remote add <span class="token punctuation">-</span>t master origin $DEPLOY_REPO)
+<span class="token punctuation">-</span> rm <span class="token punctuation">-</span>rf ./*                      <span class="token comment"># Clear old verion</span>
+<span class="token punctuation">-</span> cp <span class="token punctuation">-</span>r ../public/* .             <span class="token comment"># Copy over files for new version</span>
+<span class="token punctuation">-</span> git add <span class="token punctuation">-</span>A .
+<span class="token punctuation">-</span> git commit <span class="token punctuation">-</span>m 'Site updated'    <span class="token comment"># Make a new commit for new version</span>
+<span class="token punctuation">-</span> git branch <span class="token punctuation">-</span>m master
+<span class="token punctuation">-</span> git push <span class="token punctuation">-</span>q <span class="token punctuation">-</span>u origin master  <span class="token comment"># Push silently so we don't leak information</span>
+
+</code></pre></div></li> <li><p><code>git add .</code></p></li> <li><p><code>git commit -m 'init'</code></p></li> <li><p>配置远程仓库<code>git config remote origin git@github.com:alphasen/alphasen.github.io.git</code></p></li> <li><p>将hexo分支推到github<code>git push -u origin hexo</code></p></li> <li><p>将master分支推送到github<code>git push -u origin master</code></p></li></ol></li> <li><p>访问https://travis-ci.org/xxx/blog.github.io查看构建进度</p></li> <li><p>构建完成后https://blogxxx.github.io就可以正常访问了</p></li> <li><p>如有问题，请参考<code>https://github.com/alphasen/alphasen.github.io</code></p></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/nav.7.other/" class="prev router-link-active">
+        Other
+      </a></span> <span class="next"><a href="/nav.7.other/深度好文.html">
+        深度好文
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.87d94ce0.js" defer></script><script src="/assets/js/2.58eaf8be.js" defer></script><script src="/assets/js/26.61782855.js" defer></script><script src="/assets/js/3.f2a5cb00.js" defer></script>
+  </body>
+</html>
